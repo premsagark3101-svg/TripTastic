@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triptastic - Home</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="/" class="logo">Triptastic</a>
+        </div>
+        <div class="auth-links" id="auth-links">
+            <span id="user-greeting" style="display:none;"></span>
+            <a href="#" id="login-link">Log in</a>
+            <a href="#" id="signup-link">Sign up</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Plan Your Perfect Trip</h1>
+            <div class="search-container">
+                <input type="text" placeholder="Where to?" class="search-bar">
+                <button class="search-button">Search</button>
+            </div>
+            <button class="start-button" onclick="window.location.href='/itinerary/'">Start Planning</button>
+        </section>
+
+        <section id="my-itineraries-section" class="itinerary-section" style="display:none;">
+            <h2>Your Itineraries</h2>
+            <div class="input-container">
+                <ul id="my-itineraries-list"></ul>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <a href="/itinerary/">
+                    <h3>Smart Itinerary</h3>
+                    <p>Get personalized travel plans</p>
+                </a>
+            </div>
+            <div class="feature">
+                <a href="/hotels/">
+                    <h3>Best Hotels</h3>
+                    <p>Find perfect accommodations</p>
+                </a>
+            </div>
+            <div class="feature">
+                <a href="/guides/">
+                    <h3>Local Guides</h3>
+                    <p>Connect with local experts</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="steps">
+            <div class="step">
+                <h3>1. Choose Destination</h3>
+                <p>Pick your dream location</p>
+            </div>
+            <div class="step">
+                <h3>2. Set Preferences</h3>
+                <p>Tell us what you like</p>
+            </div>
+            <div class="step">
+                <h3>3. Get Your Plan</h3>
+                <p>Receive a detailed itinerary</p>
+            </div>
+            <div class="step">
+                <h3>4. Enjoy Your Trip</h3>
+                <p>Make memories that last</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html> 

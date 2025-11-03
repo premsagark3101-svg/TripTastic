@@ -1,0 +1,7 @@
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #e9ecef; margin: 0; padding: 0; }
+.header-container { background: #343a40; color: #fff; padding: 1rem; }
+.logo { color: #fff; text-decoration: none; font-size: 2rem; }
+.itinerary-section { background: #fff; margin: 2rem auto; padding: 2rem; border-radius: 8px; max-width: 600px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+#generate-itinerary { background: #28a745; color: #fff; border: none; padding: 0.8rem 1.5rem; border-radius: 5px; cursor: pointer; font-size: 1rem; }
+#generate-itinerary:hover { background: #218838; }
+.hidden { display: none; } 

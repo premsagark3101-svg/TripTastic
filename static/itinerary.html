@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triptastic - Create Itinerary</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="/" class="logo">Triptastic</a>
+        </div>
+        <div class="auth-links" id="auth-links">
+            <span id="user-greeting" style="display:none;"></span>
+            <a href="/" id="back-home">Back to Home</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="itinerary-form">
+            <h2>Create Your Itinerary</h2>
+            <form id="itineraryForm">
+                <div class="form-group">
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="duration">Duration (days):</label>
+                    <input type="number" id="duration" name="duration" min="1" max="30" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="budget">Budget Range:</label>
+                    <select id="budget" name="budget" required>
+                        <option value="budget">Budget</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="luxury">Luxury</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Travel Preferences:</label>
+                    <div class="preferences-grid">
+                        <label><input type="checkbox" name="preferences" value="culture"> Culture</label>
+                        <label><input type="checkbox" name="preferences" value="adventure"> Adventure</label>
+                        <label><input type="checkbox" name="preferences" value="food"> Food</label>
+                        <label><input type="checkbox" name="preferences" value="nature"> Nature</label>
+                        <label><input type="checkbox" name="preferences" value="shopping"> Shopping</label>
+                        <label><input type="checkbox" name="preferences" value="relaxation"> Relaxation</label>
+                    </div>
+                </div>
+                
+                <button type="submit" class="start-button">Generate Itinerary</button>
+            </form>
+        </section>
+
+        <section id="itinerary-result" class="itinerary-result" style="display: none;">
+            <h2>Your Personalized Itinerary</h2>
+            <div class="itinerary-content">
+                <div id="itinerary-days"></div>
+                <div class="itinerary-actions">
+                    <button id="save-itinerary" class="start-button">Save Itinerary</button>
+                    <button id="download-itinerary" class="start-button">Download PDF</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/script.js"></script>
+    <script src="/static/itinerary.js"></script>
+</body>
+</html> 

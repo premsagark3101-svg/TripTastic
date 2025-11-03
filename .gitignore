@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.Python
+
+# Environments
+.env
+venv/
+.venv/
+ENV/
+env/
+
+# Django
+db.sqlite3
+media/
+staticfiles/
+
+# IDE/OS
+.vscode/
+.idea/
+*.iml
+*.code-workspace
+*.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Node (if any frontend tooling later)
+node_modules/
+package-lock.json
+
+

@@ -1,0 +1,9 @@
+Django>=4.2,<4.3
+djangorestframework
+djongo
+pymongo
+python-dotenv
+openai
+requests
+django-cors-headers
+python-decouple
